@@ -7,7 +7,6 @@ import { useRouter } from 'next/router';
 
 const SearchPage = ({ results }) => {
     const router = useRouter();
-    console.log(results);
     return (
         <div>
             <Head>
@@ -25,6 +24,7 @@ const SearchPage = ({ results }) => {
 export default SearchPage;
 
 export async function getServerSideProps(context) {
+    const startIndex = context.query.start || '1';
     const mockData = true;
     const data = mockData
         ? Response
@@ -33,7 +33,7 @@ export async function getServerSideProps(context) {
                   process.env.API_KEY
               }&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}${
                   context.query.searchType && '&searchType=image'
-              }`
+              }&start=${startIndex}`
           )
               .then((res) => res.json())
               .catch((err) => console.log(err));

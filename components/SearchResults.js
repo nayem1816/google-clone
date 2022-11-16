@@ -1,5 +1,6 @@
 import React from 'react';
 import Parser from 'html-react-parser';
+import PaginationButtons from './PaginationButtons';
 
 const SearchResults = ({ results }) => {
     return (
@@ -28,6 +29,7 @@ const SearchResults = ({ results }) => {
                     </p>
                 </div>
             ))}
+            <PaginationButtons />
         </div>
     );
 };
