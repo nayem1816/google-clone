@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Image from 'next/image';
 import { BiSearch, BiMicrophone } from 'react-icons/bi';
+import Footer from '../components/Footer';
 
 export default function Home() {
     return (
@@ -26,11 +27,12 @@ export default function Home() {
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1024px-Google_2015_logo.svg.png"
                     alt="google"
                 />
-                <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg px-5 py-3 rounded-full items-center sm:max-w-xl lg:max-w-2xl">
+                <div className="flex w-full mt-5 mx-auto max-w-[90%] border border-gray-200 hover:shadow-lg focus-within:shadow-lg px-5 py-2.5 rounded-full items-center sm:max-w-xl lg:max-w-2xl shadow">
                     <BiSearch className="h-5 w-5 text-gray-500 mr-3" />
                     <input
                         type="text"
                         className="flex-grow focus:outline-none"
+                        placeholder="Search Google or type a URL"
                     />
                     <BiMicrophone className="h-5 w-5 text-gray-500" />
                 </div>
@@ -45,6 +47,7 @@ export default function Home() {
             </form>
 
             {/* Footer */}
+            <Footer />
         </div>
     );
 }
