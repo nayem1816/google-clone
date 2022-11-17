@@ -4,19 +4,24 @@ import SearchHeader from '../components/SearchHeader';
 import Response from '../Response';
 import SearchResults from '../components/SearchResults';
 import { useRouter } from 'next/router';
+import ImageResult from '../components/ImageResult';
 
 const SearchPage = ({ results }) => {
     const router = useRouter();
     return (
-        <div>
+        <div className="mb-5">
             <Head>
                 <title>{router.query.term} - Search page</title>
             </Head>
             {/* Search header */}
             <SearchHeader />
 
-            {/* Search Result */}
-            <SearchResults results={results} />
+            {/* Search web and images Results */}
+            {router.query.searchType === 'image' ? (
+                <ImageResult results={results} />
+            ) : (
+                <SearchResults results={results} />
+            )}
         </div>
     );
 };
@@ -25,7 +30,7 @@ export default SearchPage;
 
 export async function getServerSideProps(context) {
     const startIndex = context.query.start || '1';
-    const mockData = true;
+    const mockData = false;
     const data = mockData
         ? Response
         : await fetch(
