@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Google Clone
 
-First, run the development server:
+A website that functions as a clone of the Google search engine would mimic the functionality and interface of Google's search engine. Users would be able to enter keywords or phrases into a search bar, and the website would return a list of relevant web pages and information based on those keywords. The website would likely use a similar algorithm to Google's to generate these results, and may also incorporate other features such as image and video search.
+
+![Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+
+## Authors
+
+- [@nayem1816](https://www.github.com/nayem1816)
+
+
+## Features
+
+- Web search: Users can search for relevant web pages by entering keywords or phrases into a search bar. The website would return a list of results that match the user's query.
+
+- Image search: Users can search for images by entering keywords or phrases related to the image they're looking for.
+
+- Advanced search operators: Users can use special characters and operators to narrow down their search results to specific websites or file types.
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/nayem1816/google-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  cd google-clone
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  npm install
+```
 
-## Learn More
+Start the server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project, you will need to add the following environment variables to your .env file
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`GOOGLE_CLIENT_ID`  
+`GOOGLE_CLIENT_SECRET`  
+`API_KEY`   
+`CONTEXT_KEY`  
+`SECRET`
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at nayemhossainmd1@gmail.com
+
+
+## Support
+
+For support, email nayemhossainmd1@gmail.com
+
