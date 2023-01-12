@@ -58,4 +58,4 @@ If you have any feedback, please reach out to us at nayemhossainmd1@gmail.com
 
 ## Support
 
-For support, email nayemhossainmd1@gmail.com
+For support, email: nayemhossainmd1@gmail.com
