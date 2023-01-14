@@ -21,6 +21,7 @@ const User = ({ className }) => {
             <button
                 className={`bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md ${className}`}
                 onClick={signIn}
+                disabled="true"
             >
                 Sign in
             </button>
